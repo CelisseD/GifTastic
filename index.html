@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GifTastic</title>
+
     <!-- Link to jQuery CDN -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -28,20 +29,30 @@
 
 <body>
 
-<!-- TV Show Buttons will get dumped here -->
-
-<div id="buttons-view"></div>
-
-<form id="show-form">
-    <label for="show-input">Add Your Favorite TV Shows!</label>
-    <input type="text" id="show-input"><br>
-
-    <!-- Button triggers new TV show to be added -->
-    <input id="add-show" type="submit" value="Add Your Favorite TV Shows!">
-</form>
+    <!-- HEADER HERE -->
 
 
-<div id="gifs-view"></div>
+    <!-- TV Show Buttons will get dumped here -->
+
+    <div class="row">
+        <div id="buttons-view" class="col-md-8"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <form id="show-form">
+                <label for="show-input">Add Your Favorite TV Shows!</label><br>
+                <input type="text" id="show-input"><br>
+
+                <!-- Button triggers new TV show to be added -->
+                <input id="add-show" type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8" id="gifs-view"></div>
+    </div>
 
 
 
