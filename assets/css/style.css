@@ -1,0 +1,46 @@
+
+body {
+    background: url("../images/quilted-bg.jpg");
+}
+
+.card { 
+    background-color: rgba(245, 245, 245, 0.4); 
+    box-align: center;
+}
+
+.card-header { 
+    opacity: .5;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: whitesmoke
+
+}
+
+.jumbotron {
+    background-color: black;
+    color: grey;
+}
+
+.btn {
+    margin: 3px;
+}
+
+img {
+    margin: 10px;
+}
+
+.btnContainer {
+    padding: 30px;
+    background-color: rgba(245, 245, 245, 0.4); 
+    border-style: solid;
+    border-color: lightgray;
+    border-width: 1px;
+    justify-items: center;
+}
+
+.gifs-view {
+    padding: 30px;
+    justify-items: center;
+}

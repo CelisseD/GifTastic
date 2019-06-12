@@ -19,7 +19,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Link to Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Leckerli+One|Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900&display=swap" rel="stylesheet">
 
     <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -29,35 +29,46 @@
 
 <body>
 
+    <img class="wine" src="assets/images/wine.jpg">
+
     <!-- HEADER HERE -->
-
-
-    <!-- TV Show Buttons will get dumped here -->
-
-    <div class="row">
-        <div id="buttons-view" class="col-md-8"></div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-8">
-            <form id="show-form">
-                <label for="show-input">Add Your Favorite TV Shows!</label><br>
-                <input type="text" id="show-input"><br>
-
-                <!-- Button triggers new TV show to be added -->
-                <input id="add-show" type="submit" value="Submit">
-            </form>
+    <div class="container">
+        <div class="row col-md-8 mx-auto">
+            <div class="jumbotron jumbotron-fluid text-center">
+                <div class="container">
+                    <h1 class="display-4">The Real Housewives</h1>
+                    <h2>Gif Generator</h2>
+                    <p class="lead">Click on the buttons below to view gifs from The Real Housewives franchises. Use the
+                        text box to search for your favorite Housewives, e.g., Porsha, Nene, Lisa Vanderpump, Bethenny,
+                        Ramona, etc. Click the gif to pause and unpause.<br>Enjoy the endless shade!!</p>
+                </div>
+            </div>
         </div>
     </div>
 
+    <!-- TV Show Buttons will get dumped here -->
 
-    
-    <div class="row">
-        <div class="gifs-view"></div>
+    <div class="container">
+        <div class="row col-md-8 mx-auto">
+            <div class="btnContainer">
+            <div id="buttons-view">
+            </div><br><br>
+                <form id="show-form" class="mx-auto">
+                    <label for="show-input">Add Your Favorite Housewife!</label><br>
+                    <input type="text" id="show-input"> <input class="btn btn-dark" id="add-show" type="submit"
+                        value="Submit">
+                </form></div>
+
+<!-- GIFS WILL POPULATE HERE -->
+                
+                <div class="row mx-auto">
+                    <div class="gifs-view mx-auto"></div>
+                </div>
+
+
+            </div>
+        </div>
     </div>
-
-
-
     <script src="assets/javascript/app.js"></script>
 </body>
 

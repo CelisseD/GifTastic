@@ -3,14 +3,13 @@ $(document).ready(function () {
 
     //Initial array of TV starterButtons
     var starterButtons = [
-        "The Golden Girls",
-        "The OC",
+        "The Real Housewives of Orange County",
+        "The Real Houswives of New York",
         "The Real Housewives of Beverly Hills",
-        "Vanderpump Rules",
-        "Friends",
-        "Happy Endings",
-        "New Girl",
-        "Dawson's Creek"
+        "The Real Housewives of Atlanta",
+        "The Real Housewives of Potomac",
+        "The Real Houswwives of New Jersey",
+        "The Real Housewives of Dallas"
     ];
 
 
@@ -38,12 +37,12 @@ $(document).ready(function () {
 
                 console.log(queryURL);
                 console.log(response);
+                // console.log(limit);
+                console.log(response.data.length);
 
-                for (var i = 0; i < limit; i++) {
+                for (var i = 0; i < response.data.length; i++) {
 
                     var gifDiv = $("<div>");
-
-                    gifDiv.addClass("gifs-view");
 
                     var img = $("<img>");
                     img.attr("src", response.data[i].images.original_still.url);
@@ -67,7 +66,7 @@ $(document).ready(function () {
         for (var i = 0; i < starterButtons.length; i++) {
             var a = $("<button>");
 
-            a.addClass("userInput btn btn-outline-primary");
+            a.addClass("userInput btn btn-dark");
 
             a.attr("id", "input");
 
@@ -110,5 +109,7 @@ $(document).ready(function () {
 
 $(document).on("click", "#input", displayGifs);
 $(document).on("click", ".gif", imagePause);
+
+
 
 });
